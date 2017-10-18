@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <style  src="app.css"></style>
+  <link rel="stylesheet" type="text/css" href="css/master.css">
+  <head>
+    <title>Home Page</title>
+  </head>
+  <body>
+    <div class="center">
+      <img id="main-image" src="images/do_it1.png" alt="Do it" title="Do it">
+      <h2 id="do-it">Do it.</h2>
+    </div>
+    <div class="center">
+      <!-- Can put some links here -->
+      <!-- <a class="green_button" href=#> Label </a> -->
+      <!-- <a class="green_button" href=#> Label2 </a> -->
+    </div>
+
+    <script type="text/javascript">
+      // randomly change to another middle image
+      var images = ["do_it0.png", "do_it1.png"];
+      var mainImage = document.getElementById('main-image');
+      mainImage.setAttribute("src",
+          "images/" + images[Math.floor(Math.random() * images.length)]
+          );
+    </script>
+  </body>
+</html>
